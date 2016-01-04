@@ -1,0 +1,45 @@
+.line {
+	display: inline-block;
+	width: 4px;
+	height: 30px;
+	background-color: blue;
+	border-radius: 2px;
+
+}
+#line1, #line3, #line5 {
+	animation-duration: 1s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#line2, #line4 {
+	animation-duration: 2s;
+    animation-name: changewidth1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changewidth {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 30px;
+  }
+}
+@keyframes changewidth1 {
+  from {
+    height: 30px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
+
+#container {
+	height: 100vh;
+	width: 100vw;
+}
